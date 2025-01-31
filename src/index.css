@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+@layer theme {
+	:root {
+		/* Your theme variables */
+		--primary-color: #101010;
+		--secondary-color: #666666;
+		--accent-color: #c9f31d;
+		--font-family: "Kanit", sans-serif;
+		--text-base: 1.125rem;
+		--text-sm: 1rem;
+		--font-size-xs: 0.75rem;
+		--font-size-sm: 0.875rem;
+		--font-size-base: 1rem;
+		--font-size-lg: 1.125rem;
+		--font-size-xl: 1.25rem;
+		--font-size-2xl: 1.5rem;
+		--font-size-3xl: 1.875rem;
+		--font-size-4xl: 2.25rem;
+		--font-size-5xl: 3rem;
+		--font-size-6xl: 4.62rem;
+		--font-size-7xl: 5rem;
+		--font-size-8xl: 6rem;
+	}
+}
+@layer base {
+	/* Preflight styles */
+	body {
+		font-family: var(--font-family);
+		color: var(--secondary-color);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--primary-color);
+	}
+
+	h1 {
+		font-size: var(--font-size-8xl);
+	}
+
+	h2 {
+		font-size: var(--font-size-6xl);
+	}
+
+	a {
+		color: var(--accent-color);
+	}
+
+	/* Base styles */
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+}
+@layer components {
+	/* Component styles */
+	.pps-btn {
+		background-color: var(--accent-color);
+		color: var(--primary-color);
+		padding: 0.8285rem 1.6rem;
+		font-size: var(--text-sm);
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: var(--primary-color);
+			color: var(--accent-color);
+		}
+	}
+}
