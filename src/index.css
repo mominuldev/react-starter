@@ -48,7 +48,7 @@
 	}
 
 	a {
-		color: var(--accent-color);
+		transition: all 0.3s ease-in-out;
 	}
 
 	/* Base styles */

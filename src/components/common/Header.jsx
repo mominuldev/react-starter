@@ -9,7 +9,10 @@ const Header = () => {
 			<div className='container mx-auto'>
 				<div className='flex items-center justify-between'>
 					<div className='py-4'>
-						<Link to='/' className='text-3xl font-bold uppercase'>
+						<Link
+							to='/'
+							className='text-3xl font-bold uppercase text-blue-600'
+						>
 							Genesis
 						</Link>
 					</div>
